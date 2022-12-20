@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="242.0" prefWidth="365.0" rotateGraphic="true" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+  <tabs>
+    <Tab text="아이디 찾기">
+         <content>
+            <AnchorPane prefHeight="183.0" prefWidth="365.0" style="-fx-background-color: white;">
+               <children>
+                  <TextField fx:id="txtName1" layoutX="94.0" layoutY="46.0" prefHeight="23.0" prefWidth="100.0" style="-fx-background-color: white; -fx-border-color: #31b0e5; -fx-border-radius: 10;" AnchorPane.leftAnchor="94.0" />
+                  <TextField fx:id="txtFirstNumber1" layoutX="97.0" layoutY="103.0" prefHeight="23.0" prefWidth="100.0" style="-fx-background-color: white; -fx-border-radius: 10; -fx-border-color: #31b0e5;" AnchorPane.leftAnchor="94.0" />
+                  <PasswordField fx:id="txtLastNumber1" layoutX="220.0" layoutY="103.0" prefHeight="23.0" prefWidth="100.0" style="-fx-background-color: white; -fx-border-color: #31b0e5; -fx-border-radius: 10;" />
+                  <Label layoutX="203.0" layoutY="107.0" text="-" />
+                  <Label layoutX="27.0" layoutY="107.0" text="주민번호 :" textFill="BLUE" />
+                  <Label layoutX="51.0" layoutY="50.0" text="이름 :" textFill="BLUE" />
+                  <Button layoutX="133.0" layoutY="146.0" mnemonicParsing="false" onAction="#IDSearchButton" prefHeight="35.0" prefWidth="100.0" style="-fx-background-color: #31b0e5; -fx-background-radius: 5;" text="확인" textFill="WHITE">
+                     <effect>
+                        <DropShadow />
+                     </effect></Button>
+               </children>
+            </AnchorPane>
+         </content></Tab>
+    <Tab text="비밀번호 찾기">
+         <content>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="51.0" layoutY="44.0" text="이름 :" textFill="BLUE" />
+                  <Label layoutX="38.0" layoutY="85.0" text="아이디 :" textFill="BLUE" />
+                  <Label layoutX="23.0" layoutY="124.0" text="주민번호 :" textFill="BLUE" />
+                  <TextField fx:id="txtFirstNumber2" layoutX="91.0" layoutY="120.0" prefHeight="23.0" prefWidth="100.0" style="-fx-background-color: white; -fx-border-radius: 10; -fx-border-color: #31b0e5;" AnchorPane.leftAnchor="91.0" />
+                  <PasswordField fx:id="txtLastNumber2" layoutX="211.0" layoutY="120.0" prefHeight="23.0" prefWidth="100.0" style="-fx-background-color: white; -fx-border-radius: 10; -fx-border-color: #31b0e5;" />
+                  <Button layoutX="133.0" layoutY="169.0" mnemonicParsing="false" onAction="#PasswordSearchButton" prefHeight="30.0" prefWidth="100.0" style="-fx-background-radius: 10; -fx-background-color: #31b0e5;" text="확인" textFill="WHITE">
+                     <effect>
+                        <DropShadow />
+                     </effect></Button>
+                  <Label layoutX="196.0" layoutY="124.0" text="-" textFill="BLUE" />
+                  <TextField fx:id="txtID" layoutX="91.0" layoutY="81.0" style="-fx-background-color: white; -fx-border-radius: 10; -fx-border-color: #31b0e5;" AnchorPane.leftAnchor="91.0" />
+                  <TextField fx:id="txtName2" layoutX="91.0" layoutY="40.0" style="-fx-background-color: white; -fx-border-radius: 10; -fx-border-color: #31b0e5;" AnchorPane.leftAnchor="91.0" />
+               </children>
+            </AnchorPane>
+         </content></Tab>
+  </tabs>
+</TabPane>

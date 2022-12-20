@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="724.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UserController">
+   <children>
+      <Label alignment="CENTER" prefHeight="144.0" prefWidth="1000.0" text="계정정보" textFill="#31b0e5">
+         <font>
+            <Font size="46.0" />
+         </font>
+      </Label>
+      <AnchorPane prefHeight="669.0" prefWidth="1000.0">
+         <children>
+            <Label layoutX="372.0" layoutY="181.0" text="이름 :" />
+            <Label layoutX="372.0" layoutY="222.0" text="ID :" />
+            <Label layoutX="372.0" layoutY="262.0" text="비밀번호 :" />
+            <PasswordField fx:id="txtPassword" layoutX="490.0" layoutY="258.0" />
+            <PasswordField fx:id="txtPasswordTest" layoutX="490.0" layoutY="296.0" />
+            <Label layoutX="372.0" layoutY="300.0" text="비밀번호 재확인:" />
+            <Label layoutX="372.0" layoutY="344.0" text="이메일 :" />
+            <Label layoutX="372.0" layoutY="387.0" text="전화번호 :" />
+            <Label fx:id="userName" layoutX="432.0" layoutY="181.0" text="Label" />
+            <Label fx:id="userID" layoutX="432.0" layoutY="222.0" text="Label" />
+            <Label fx:id="userPhoneNumber" layoutX="448.0" layoutY="387.0" text="Label" />
+            <Label fx:id="userEmail" layoutX="448.0" layoutY="344.0" text="Label" />
+            <Button layoutX="329.0" layoutY="531.0" mnemonicParsing="false" onAction="#editButton" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #31b0e5; -fx-background-radius: 10;" text="비밀번호 수정" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect></Button>
+            <Button layoutX="527.0" layoutY="530.0" mnemonicParsing="false" onAction="#logoutButton" prefHeight="50.0" prefWidth="150.0" style="-fx-border-color: #31b0e5; -fx-background-color: white; -fx-border-radius: 10;" text="로그아웃" textFill="#31b0e5" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

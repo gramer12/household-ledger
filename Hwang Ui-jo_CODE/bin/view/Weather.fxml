@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="724.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.WeatherController">
+   <children>
+      <Pane prefHeight="100.0" prefWidth="1000.0" style="-fx-background-color: #31b0e5;">
+         <children>
+            <Label layoutX="415.0" layoutY="3.0" prefHeight="94.0" prefWidth="218.0" text="기상정보" textFill="#fcfcfc">
+               <font>
+                  <Font size="46.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <AnchorPane layoutY="100.0" prefHeight="624.0" prefWidth="370.0">
+         <children>
+            <ImageView fx:id="imgView" fitHeight="277.0" fitWidth="295.0" layoutX="38.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true" />
+            <Label layoutX="84.0" layoutY="110.0" prefHeight="19.0" prefWidth="195.0" text="   아산시 탕정면">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="370.0" layoutY="100.0" prefHeight="624.0" prefWidth="630.0">
+         <children>
+            <Label fx:id="Kangsu" layoutX="94.0" layoutY="222.0" prefHeight="54.0" prefWidth="443.0">
+               <font>
+                  <Font size="32.0" />
+               </font></Label>
+            <Label fx:id="exKangsu" layoutX="94.0" layoutY="363.0" prefHeight="54.0" prefWidth="443.0">
+               <font>
+                  <Font size="32.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

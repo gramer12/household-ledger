@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="421.0" prefWidth="410.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SignUpController">
+   <children>
+      <TextField fx:id="txtName" layoutX="58.0" layoutY="82.0" promptText="이름" style="-fx-background-color: white; -fx-border-color: #31b0e5; -fx-border-radius: 10;" AnchorPane.leftAnchor="65.0" />
+      <TextField fx:id="txtFirstNumber" layoutX="63.0" layoutY="117.0" prefHeight="23.0" prefWidth="102.0" promptText="주민번호" style="-fx-background-color: white; -fx-border-color: #31b0e5; -fx-border-radius: 10;" AnchorPane.leftAnchor="65.0" />
+      <Label layoutX="172.0" layoutY="121.0" prefHeight="15.0" prefWidth="0.0" text="-" />
+      <PasswordField fx:id="txtLastNumber" layoutX="183.0" layoutY="117.0" prefWidth="102.0" style="-fx-background-color: white; -fx-border-color: #31b0e5; -fx-border-radius: 10;" />
+      <Button layoutX="301.0" layoutY="117.0" mnemonicParsing="false" onAction="#userCheckButton" prefWidth="70.0" style="-fx-background-color: #31b0e5; -fx-background-radius: 10;" text="계정확인" textFill="WHITE" AnchorPane.rightAnchor="45.0">
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <TextField fx:id="txtID" layoutX="65.0" layoutY="151.0" promptText="ID" style="-fx-background-color: white; -fx-border-color: #31b0e5; -fx-border-radius: 10;" AnchorPane.leftAnchor="65.0" />
+      <Button layoutX="301.0" layoutY="151.0" mnemonicParsing="false" onAction="#IDTestButton" prefWidth="70.0" style="-fx-background-color: #31b0e5; -fx-background-radius: 10;" text="중복확인" textFill="WHITE" AnchorPane.rightAnchor="45.0">
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <PasswordField fx:id="txtPassword" layoutX="65.0" layoutY="186.0" promptText="비밀번호" style="-fx-background-color: white; -fx-border-color: #31b0e5; -fx-border-radius: 10;" AnchorPane.leftAnchor="65.0" />
+      <PasswordField fx:id="txtPasswordTest" layoutX="63.0" layoutY="221.0" promptText="비밀번호 확인" style="-fx-background-color: white; -fx-border-color: #31b0e5; -fx-border-radius: 10;" AnchorPane.leftAnchor="65.0" />
+      <Button layoutX="274.0" layoutY="221.0" mnemonicParsing="false" onAction="#passwordTestButton" prefHeight="23.0" prefWidth="100.0" style="-fx-background-color: #31b0e5; -fx-background-radius: 10;" text="비밀번호 확인" textFill="WHITE" AnchorPane.rightAnchor="45.0">
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <TextField fx:id="txtEmail" layoutX="63.0" layoutY="257.0" promptText="이메일" style="-fx-background-color: white; -fx-border-color: #31b0e5; -fx-border-radius: 10;" AnchorPane.leftAnchor="65.0" />
+      <TextField fx:id="txtPhoneNumber" layoutX="63.0" layoutY="293.0" prefHeight="23.0" prefWidth="138.0" promptText="전화번호" style="-fx-background-color: white; -fx-border-color: #31b0e5; -fx-border-radius: 10;" AnchorPane.leftAnchor="65.0" />
+      <Button layoutX="84.0" layoutY="347.0" mnemonicParsing="false" onAction="#CreatButton" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #31b0e5; -fx-background-radius: 20;" text="회원가입" textFill="WHITE" AnchorPane.leftAnchor="84.0">
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <Button layoutX="235.0" layoutY="347.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#cancleButton" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: white; -fx-border-color: #31b0e5; -fx-border-radius: 20;" text="취소" textFill="#31b0e5" AnchorPane.rightAnchor="84.0" />
+      <Pane prefHeight="55.0" prefWidth="410.0" style="-fx-background-color: #31b0e5;">
+         <children>
+            <Label layoutX="57.0" layoutY="17.0" prefHeight="23.0" prefWidth="74.0" text="회원가입" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

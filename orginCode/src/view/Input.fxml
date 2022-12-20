@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.InputButtonController">
+   <children>
+      <Label layoutX="67.0" layoutY="61.0" text="1.종류" textFill="BLUE" />
+      <RadioButton layoutX="139.0" layoutY="60.0" mnemonicParsing="false" onAction="#setExpense" selected="true" text="지출" textFill="BLUE" userData="expense">
+         <toggleGroup>
+            <ToggleGroup fx:id="group" />
+         </toggleGroup></RadioButton>
+      <RadioButton layoutX="228.0" layoutY="60.0" mnemonicParsing="false" onAction="#setIncome" text="수입" textFill="BLUE" toggleGroup="$group" userData="expense" />
+      <RadioButton layoutX="317.0" layoutY="60.0" mnemonicParsing="false" onAction="#setSchedule" text="일정" textFill="BLUE" toggleGroup="$group" userData="expense" />
+      <Label layoutX="67.0" layoutY="101.0" text="2.날짜" textFill="BLUE" />
+      <DatePicker fx:id="datePicker" layoutX="139.0" layoutY="97.0" prefHeight="23.0" prefWidth="223.0" style="-fx-background-color: white; -fx-border-color: #31b0e5; -fx-border-radius: 10;" />
+      <Label layoutX="67.0" layoutY="146.0" text="3.유형" textFill="BLUE" />
+      <ComboBox fx:id="typeCheck" layoutX="139.0" layoutY="142.0" prefWidth="150.0" promptText="유형선택" style="-fx-background-color: white; -fx-border-color: #31b0e5; -fx-border-radius: 10;" />
+      <Label layoutX="67.0" layoutY="184.0" text="4.제목" textFill="BLUE" />
+      <TextField fx:id="txtName" layoutX="139.0" layoutY="180.0" prefHeight="23.0" prefWidth="223.0" style="-fx-background-color: white; -fx-border-color: #31b0e5; -fx-border-radius: 10;" />
+      <Label layoutX="67.0" layoutY="224.0" text="5.금액" textFill="BLUE" />
+      <TextField fx:id="txtMoney" layoutX="139.0" layoutY="220.0" prefHeight="23.0" prefWidth="223.0" style="-fx-background-color: white; -fx-border-color: #31b0e5; -fx-border-radius: 10;" />
+      <Label layoutX="67.0" layoutY="260.0" text="6.내용" textFill="BLUE" />
+      <TextArea fx:id="txtContent" layoutX="139.0" layoutY="260.0" prefHeight="139.0" prefWidth="223.0" style="-fx-background-color: white; -fx-border-color: #31b0e5; -fx-border-radius: 10;" />
+      <Button layoutY="413.0" mnemonicParsing="false" onAction="#confirmButton" prefHeight="75.0" prefWidth="250.0" style="-fx-border-color: #31b0e5; -fx-background-color: #31b0e5;" text="입력" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" />
+      <Button layoutX="250.0" layoutY="427.0" mnemonicParsing="false" onAction="#cancleButton" prefHeight="75.0" prefWidth="250.0" style="-fx-border-color: #31b0e5; -fx-background-color: white;" text="취소" textFill="#31b0e5" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+   </children>
+</AnchorPane>
